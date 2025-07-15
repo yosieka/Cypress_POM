@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-07-09T19:51:31.827Z",
+    "end": "2025-07-09T19:51:37.305Z",
+    "duration": 5478,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1fa40b50-7693-4627-99ea-5c43f916b47d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\02. Book Page\\02.Edit_Book.cy.js",
+      "file": "cypress\\e2e\\02. Book Page\\02.Edit_Book.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "506585b2-38a7-482b-819f-d6cb2f3e5a1a",
+          "title": "Admin Edit Book",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edit Book - Valid",
+              "fullTitle": "Admin Edit Book Edit Book - Valid",
+              "timedOut": null,
+              "duration": 1976,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "bookPage.clickButtonEdit(savedBook.name);",
+              "err": {},
+              "uuid": "9193e762-3559-4ad8-a00b-01038a7c4a3d",
+              "parentUUID": "506585b2-38a7-482b-819f-d6cb2f3e5a1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Order Buku",
+              "fullTitle": "Admin Edit Book Order Buku",
+              "timedOut": null,
+              "duration": 1379,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url') + '/order');\nbookPage.saveSelectOptionsToFixture('kode_buku', 'listBook.json');\nbookPage.selectRandomOption('kode_buku', 'listBook.json');",
+              "err": {},
+              "uuid": "f1cfd78e-c160-4c0e-b47b-7a142d485e62",
+              "parentUUID": "506585b2-38a7-482b-819f-d6cb2f3e5a1a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9193e762-3559-4ad8-a00b-01038a7c4a3d",
+            "f1cfd78e-c160-4c0e-b47b-7a142d485e62"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3355,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
